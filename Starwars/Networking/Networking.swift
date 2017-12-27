@@ -72,7 +72,7 @@ class Networking {
 
     //takes a personName and returns Image via completionhandler
     static func downloadPersonImage(byName url:String,completion:@escaping(UIImage?,Error?)->()){
-        let myUrl = "https://raw.githubusercontent.com/sbassett1/swImages/master/\(url).png"
+        let myUrl = "https://raw.githubusercontent.com/sbassett1/swImages/master/\(url.replacingOccurrences(of: "/", with: "")).png"
         print(myUrl)
         
         guard let uurl = URL(string:myUrl) else {return}
@@ -94,7 +94,7 @@ class Networking {
     }
 
     static func downloadVehicleImage(byName url:String,completion:@escaping(UIImage?,Error?)->()){
-        let myUrl = "https://raw.githubusercontent.com/cjamie/starwarsapi_starships/master/Vehicles/\(url).png"
+        let myUrl = "https://raw.githubusercontent.com/cjamie/starwarsapi_starships/master/Vehicles/\(url.replacingOccurrences(of: "/", with: "")).png"
         print(myUrl)
         
         guard let uurl = URL(string:myUrl) else {return}
@@ -118,7 +118,7 @@ class Networking {
     
     
     static func downloadStarshipImage(byName url:String,completion:@escaping(UIImage?,Error?)->()){
-        let myUrl = "https://raw.githubusercontent.com/Zephzz/sada/master/temp/Starships/\(url).png"
+        let myUrl = "https://raw.githubusercontent.com/Zephzz/sada/master/temp/Starships/\(url.replacingOccurrences(of: "/", with: "")).png"
         print(myUrl)
         guard let uurl = URL(string:myUrl) else {return}
         
@@ -141,7 +141,7 @@ class Networking {
     
     static func downloadSpecieImage(byName url:String,completion:@escaping(UIImage?,Error?)->()){
         let myUrl =
-        "https://raw.githubusercontent.com/Zephzz/StarwarsSpeciesImages/master/Species/\(url).png"
+        "https://raw.githubusercontent.com/Zephzz/StarwarsSpeciesImages/master/Species/\(url.replacingOccurrences(of: "/", with: "")).png"
         print(myUrl)
         guard let uurl = URL(string:myUrl) else {return}
         
@@ -164,7 +164,7 @@ class Networking {
     //TODO: update for change link
     static func downloadFilmImage(byName filmTitle:String,completion:@escaping(UIImage?,Error?)->()){
         let myUrl =
-        "https://raw.githubusercontent.com/cjamie/starwarsapi_starships/master/FilmPosters/\(filmTitle).png"
+        "https://raw.githubusercontent.com/cjamie/starwarsapi_starships/master/FilmPosters/\(filmTitle.replacingOccurrences(of: "/", with: "")).png"
         print(myUrl)
         guard let uurl = URL(string:myUrl) else {return}
         
@@ -247,9 +247,6 @@ class Networking {
             }
         }
     }
-
-    
-    
     
     
     static func getSpecie(byPage:String, completion: @escaping (Species?, Error?)->()) {
@@ -267,7 +264,4 @@ class Networking {
             }
         }
     }
-
-    
-    
 }
