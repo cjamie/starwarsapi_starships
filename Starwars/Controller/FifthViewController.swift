@@ -60,7 +60,7 @@ extension TableViewFunctions5: UITableViewDataSource, UITableViewDelegate{
         }
         cell.setPlaceholder()
         //there is currently no film image
-        //        cell.loadFilmImage(fromName: filmArr[indexPath.row].name.replacingOccurrences(of: " ", with: "").folding(options: .diacriticInsensitive, locale: .current))
+        cell.loadFilmImage(fromName: filmArr[indexPath.row].title.replacingOccurrences(of: " ", with: "").folding(options: .diacriticInsensitive, locale: .current))
         cell.myName.text = filmArr[indexPath.row].title
         return cell
     }

@@ -162,9 +162,9 @@ class Networking {
     }
     
     //TODO: update for change link
-    static func downloadFilmImage(byName url:String,completion:@escaping(UIImage?,Error?)->()){
+    static func downloadFilmImage(byName filmTitle:String,completion:@escaping(UIImage?,Error?)->()){
         let myUrl =
-        "https://raw.githubusercontent.com/Zephzz/StarwarsSpeciesImages/master/Species/\(url).png"
+        "https://raw.githubusercontent.com/cjamie/starwarsapi_starships/master/FilmPosters/\(filmTitle).jpeg"
         print(myUrl)
         guard let uurl = URL(string:myUrl) else {return}
         
