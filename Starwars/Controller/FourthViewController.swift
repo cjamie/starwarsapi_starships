@@ -60,7 +60,7 @@ extension TableViewFunctions4: UITableViewDataSource, UITableViewDelegate{
         }
         cell.setPlaceholder()
         //there is currently no vehicle image
-        //        cell.loadVehicleImage(fromName: vehicleArr[indexPath.row].name.replacingOccurrences(of: " ", with: "").folding(options: .diacriticInsensitive, locale: .current))
+        cell.loadVehicleImage(fromName: vehicleArr[indexPath.row].name.replacingOccurrences(of: " ", with: "").folding(options: .diacriticInsensitive, locale: .current))
         cell.myName1.text = vehicleArr[indexPath.row].name
         return cell
     }

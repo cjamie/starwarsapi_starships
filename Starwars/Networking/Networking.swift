@@ -94,7 +94,7 @@ class Networking {
     }
 
     static func downloadVehicleImage(byName url:String,completion:@escaping(UIImage?,Error?)->()){
-        let myUrl = "........"
+        let myUrl = "https://raw.githubusercontent.com/cjamie/starwarsapi_starships/master/Vehicles/\(url).png"
         print(myUrl)
         
         guard let uurl = URL(string:myUrl) else {return}
