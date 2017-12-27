@@ -3,7 +3,7 @@
 //  Starwars
 //
 //  Created by Admin on 12/25/17.
-//  Copyright © 2017 Greg Dominguez. All rights reserved.
+//  Copyright © 2017 Jamie Chu. All rights reserved.
 //
 
 import UIKit
@@ -20,5 +20,9 @@ class PeopleHeaderViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    //takes a personName and sets the myImage to image
+   
+    
 
 }

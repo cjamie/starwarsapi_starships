@@ -3,7 +3,7 @@
 //  Starwars
 //
 //  Created by Admin on 12/24/17.
-//  Copyright © 2017 Greg Dominguez. All rights reserved.
+//  Copyright © 2017 Jamie Chu. All rights reserved.
 //
 
 import UIKit
